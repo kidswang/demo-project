@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.waiwaiwai.springcloud.mapper.AuthOrgPropertyMapper">
+  <resultMap id="BaseResultMap" type="com.waiwaiwai.springcloud.entity.AuthOrgProperty">
+    <!--@mbg.generated-->
+    <!--@Table auth_org_property-->
+    <id column="ID" property="id" />
+    <result column="ORG_ID" property="orgId" />
+    <result column="NAME" property="name" />
+    <result column="VALUE" property="value" />
+    <result column="REVISION" property="revision" />
+    <result column="CREATED_BY" property="createdBy" />
+    <result column="CREATED_TIME" property="createdTime" />
+    <result column="UPDATED_BY" property="updatedBy" />
+    <result column="UPDATED_TIME" property="updatedTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    ID, ORG_ID, `NAME`, `VALUE`, REVISION, CREATED_BY, CREATED_TIME, UPDATED_BY, UPDATED_TIME
+  </sql>
+</mapper>

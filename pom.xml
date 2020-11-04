@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.waiwaiwai.springcloud</groupId>
+  <artifactId>mscloud</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>cloudalibaba-provider-payment9001</module>
+    <module>cloudalibaba-config-nacos-client3377</module>
+    <module>cloudalibaba-provider-payment9002</module>
+  </modules>
+  <packaging>pom</packaging>
+  <description>父工程,统一管理jar包版本</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>8</java.version>
+    <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+    <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+    <spring-boot.version>2.2.7.RELEASE</spring-boot.version>
+    <mybatis.version>2.1.3</mybatis.version>
+    <mybatis-plus.version>3.4.0</mybatis-plus.version>
+    <mysql-connector.version>8.0.16</mysql-connector.version>
+    <jwt.version>8.16</jwt.version>
+    <hutool.version>5.4.1</hutool.version>
+    <lombok.version>1.18.12</lombok.version>
+    <knife4j.version>2.0.4</knife4j.version>
+    <commons-io.version>2.4</commons-io.version>
+    <wxjava.version>3.9.0</wxjava.version>
+    <mapstruct.version>1.3.1.Final</mapstruct.version>
+
+    <bananamall-common.version>0.0.1-SNAPSHOT</bananamall-common.version>
+    <bananamall-mbg.version>0.0.1-SNAPSHOT</bananamall-mbg.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <!--Spring Cloud 相关依赖-->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!--Spring Cloud Alibaba 相关依赖-->
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+        <version>${spring-cloud-alibaba.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>${srping-boot.version}</version>
+      </dependency>
+
+      <!--Hutool Java工具包-->
+      <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>${hutool.version}</version>
+      </dependency>
+
+      <!--Knife4j API文档生产工具-->
+      <dependency>
+        <groupId>com.github.xiaoymin</groupId>
+        <artifactId>knife4j-micro-spring-boot-starter</artifactId>
+        <version>${knife4j.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.github.xiaoymin</groupId>
+        <artifactId>knife4j-spring-boot-starter</artifactId>
+        <version>${knife4j.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-pool2</artifactId>
+        <version>2.8.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io.version}</version>
+      </dependency>
+
+
+      <!--Mysql数据库驱动-->
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql-connector.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>${mybatis.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+        <version>${mybatis-plus.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper-spring-boot-starter</artifactId>
+        <version>1.3.0</version>
+      </dependency>
+
+      <!--JWT(Json Web Token)登录支持-->
+      <dependency>
+        <groupId>com.nimbusds</groupId>
+        <artifactId>nimbus-jose-jwt</artifactId>
+        <version>${jwt.version}</version>
+      </dependency>
+
+      <!--SpringData工具包-->
+      <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-commons</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+
+      <!-- 短信sdk -->
+      <dependency>
+        <groupId>com.aliyun</groupId>
+        <artifactId>aliyun-java-sdk-core</artifactId>
+        <version>4.5.3</version>
+      </dependency>
+
+      <!--Minio-->
+      <dependency>
+        <groupId>io.minio</groupId>
+        <artifactId>minio</artifactId>
+        <version>3.0.10</version>
+      </dependency>
+
+      <!--mapStruct-->
+      <dependency>
+        <groupId>org.mapstruct</groupId>
+        <artifactId>mapstruct</artifactId>
+        <version>${mapstruct.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mapstruct</groupId>
+        <artifactId>mapstruct-processor</artifactId>
+        <version>${mapstruct.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.github.binarywang</groupId>
+        <artifactId>wx-java-mp-spring-boot-starter</artifactId>
+        <version>${wxjava.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.github.binarywang</groupId>
+        <artifactId>wx-java-pay-spring-boot-starter</artifactId>
+        <version>${wxjava.version}</version>
+      </dependency>
+
+      <!--集成SpringBoot Admin监控-->
+      <!--            <dependency>-->
+      <!--                <groupId>de.codecentric</groupId>-->
+      <!--                <artifactId>spring-boot-admin-starter-server</artifactId>-->
+      <!--                <version>${admin-starter-server.version}</version>-->
+      <!--            </dependency>-->
+
+      <dependency>
+        <groupId>com.ciyun.bananamall</groupId>
+        <artifactId>bananamall-common</artifactId>
+        <version>${bananamall-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.ciyun.bananamall</groupId>
+        <artifactId>bananamall-mbg</artifactId>
+        <version>${bananamall-mbg.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring-boot.version}</version>
+          <!--                    <configuration>-->
+          <!--                        <finalName>${project.build.finalName}</finalName>-->
+          <!--                    </configuration>-->
+          <!--                    <executions>-->
+          <!--                        <execution>-->
+          <!--                            <goals>-->
+          <!--                                <goal>repackage</goal>-->
+          <!--                            </goals>-->
+          <!--                        </execution>-->
+          <!--                    </executions>-->
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
