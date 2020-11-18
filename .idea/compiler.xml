@@ -12,8 +12,5 @@
         <module name="cloudalibaba-provider-payment9002" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cloudalibaba-config-nacos-client3377" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

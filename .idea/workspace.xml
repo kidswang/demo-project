@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52050656-1e00-4701-a543-164c10d00429" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9002/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="52050656-1e00-4701-a543-164c10d00429" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,12 +37,34 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1604470970" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1604470069" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="alwaysUpdateSnapshots" value="true" />
-        <option name="mavenHome" value="D:/tool/apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -59,19 +74,23 @@
     </option>
   </component>
   <component name="ProjectId" id="1jo380iXB1NITBljoIiNqHIa8D2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cloudalibaba-provider-payment9001/src/main/java/com.waiwaiwai.springcloud" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -100,7 +119,8 @@
       <updated>1604456453918</updated>
       <workItem from="1604456455885" duration="829000" />
       <workItem from="1604458885517" duration="3916000" />
-      <workItem from="1604462838393" duration="1257000" />
+      <workItem from="1604462838393" duration="3335000" />
+      <workItem from="1604537339648" duration="24000" />
     </task>
     <servers />
   </component>
@@ -119,6 +139,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604459862510">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -132,10 +155,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="314" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604460431284" />
-    <state x="777" y="129" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1604462142550">
+    <state x="777" y="129" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1604471065022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="129" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604462142550" />
+    <state x="777" y="129" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604471065022" />
     <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1604460637021">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -160,10 +183,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="220" height="539" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1604460104148" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1604466350727">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1604471773353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604466350727" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604471773353" />
     <state x="593" y="94" key="new project wizard" timestamp="1604466831972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
